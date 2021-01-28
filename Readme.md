@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Татьяна Газарян](https://up.htmlacademy.ru/javascript/22/user/1466403).
-* Наставник: [Анастасия Ерёмина](https://htmlacademy.ru/profile/id618163).
+* Наставник: [Анастасия Ерёмина](https://up.htmlacademy.ru/javascript/22/user/618163).
 
 ---
 
