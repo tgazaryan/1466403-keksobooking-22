@@ -1,17 +1,17 @@
-let getRandomNumber = function(min, max) {
-  let random = min + Math.random() * (max + 1 - min);
-  if (min < 0) {
+const getRandomNumber = function(min, max) {
+  const random = min + Math.random() * (max + 1 - min);
+  if (min < 0 && max < 0) {
     throw('Диапазон может быть только положительным');
   }
   return Math.floor(random);
 }
-getRandomNumber();
+getRandomNumber(0, 10);
 
-let getRandomFloat = function(min, max) {
-  let random = min + Math.random() * (max + 1 - min);
-  if (min < 0) {
+const getRandomFloat = function(min, max, decimal = 2) {
+  const random = min + Math.random() * (max + 1 - min);
+  if (min < 0 && max < 0 && max <= min) {
     throw('Диапазон может быть только положительным');
   }
-  return random.toFixed(1);
+  return random.toFixed(decimal);
 }
-getRandomFloat();
+getRandomFloat(0, 10, 2);
