@@ -57,10 +57,14 @@ const getRandomArrayElement = (elements) => {
 };
 
 const createRandomArray = (array) => {
-  return array.slice(getRandomNumber(0, array.length-1), array.length);
+  return array.slice(0, getRandomNumber(0, array.length-1), array.length);
 };
 
 const createObj = () => {
+  const location = {
+    x: getRandomFloat(35.65000, 35.7000, 5),
+    y: getRandomFloat(139.70000, 139.80000, 5),
+  };
   return {
     author: {
       avatar: `img/avatars/user0${getRandomNumber(1,8)}.png`,
@@ -78,10 +82,7 @@ const createObj = () => {
       description: DESCRIPTION,
       photos: createRandomArray(PHOTOS),
     },
-    location: {
-      x: getRandomFloat(35.65000, 35.7000, 5),
-      y: getRandomFloat(139.70000, 139.80000, 5),
-    },
+    location: `${location.x}, ${location.y}`,
   }
 };
 
