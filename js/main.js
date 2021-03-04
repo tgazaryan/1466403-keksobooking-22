@@ -57,7 +57,7 @@ const getRandomArrayElement = (elements) => {
 };
 
 const createRandomArray = (array) => {
-  return array.slice(0, getRandomNumber(0, array.length-1), array.length);
+  return array.slice(0, getRandomNumber(0, array.length));
 };
 
 const createObj = () => {
@@ -82,7 +82,7 @@ const createObj = () => {
       description: DESCRIPTION,
       photos: createRandomArray(PHOTOS),
     },
-    location: `${location.x}, ${location.y}`,
+    location: location,
   }
 };
 
