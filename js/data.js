@@ -1,4 +1,4 @@
-import {getRandomNumber, getRandomFloat} from './util.js';
+import {getRandomNumber, getRandomFloat, getRandomArrayElement, createRandomArray} from './util.js';
 
 const TITLE = 'Уютное жилье для вашего отпуска';
 const DESCRIPTION = 'Оставайтесь у нас';
@@ -35,14 +35,6 @@ const FEATURES = [
 ];
 
 const RANDOM_OBJ_COUNT = 10;
-
-const getRandomArrayElement = (elements) => {
-  return elements[getRandomNumber(0, elements.length - 1)];
-};
-
-const createRandomArray = (array) => {
-  return array.slice(0, getRandomNumber(0, array.length));
-};
 
 const createObj = () => {
   const location = {

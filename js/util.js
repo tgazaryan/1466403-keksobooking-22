@@ -16,4 +16,12 @@ const getRandomFloat = function(min, max, decimal = 2) {
 }
 getRandomFloat(0, 10, 2);
 
-export {getRandomNumber, getRandomFloat};
+const getRandomArrayElement = (elements) => {
+  return elements[getRandomNumber(0, elements.length - 1)];
+};
+
+const createRandomArray = (array) => {
+  return array.slice(0, getRandomNumber(0, array.length));
+};
+
+export {getRandomNumber, getRandomFloat, getRandomArrayElement, createRandomArray};
