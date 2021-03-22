@@ -24,4 +24,19 @@ const createRandomArray = (array) => {
   return array.slice(0, getRandomNumber(0, array.length));
 };
 
-export {getRandomNumber, getRandomFloat, getRandomArrayElement, createRandomArray};
+const getAccType = function(type){
+  switch(type){
+    case 'flat':
+      return 'Квартира';
+    case 'bungalow':
+      return 'Бунгало';
+    case 'house':
+      return 'Дом';
+    case 'palace':
+      return 'Дворец';
+    default:
+      '';
+  }
+};
+
+export {getRandomNumber, getRandomFloat, getRandomArrayElement, createRandomArray, getAccType};

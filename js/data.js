@@ -62,4 +62,6 @@ const createObj = () => {
   }
 };
 
-new Array(RANDOM_OBJ_COUNT).fill(null).map(() => createObj());
+const createObjects = new Array(RANDOM_OBJ_COUNT).fill(null).map(() => createObj());
+
+export {createObjects};
