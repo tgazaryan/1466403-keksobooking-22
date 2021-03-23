@@ -1,10 +1,6 @@
-import {createObjects} from './data.js';
 import {getAccType} from './util.js';
 
 const advertTemplate = document.querySelector('#card').content.querySelector('.popup');
-const advertList = document.querySelector('#map-canvas');
-
-const adverts = createObjects;
 
 const createAdvert = function(advertData) {
   const advert = advertTemplate.cloneNode(true);
@@ -50,5 +46,5 @@ const createAdvert = function(advertData) {
   return advert;
 };
 
-const advertCard = createAdvert(adverts[0]);
-advertList.appendChild(advertCard);
+export {createAdvert};
+
